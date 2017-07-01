@@ -1,23 +1,92 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1504.81">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Courier; color: #000000; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;h1&gt;Hello World&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">&lt;p&gt;I'm hosted with GitHub Pages.&lt;/p&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
-</body>
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Página de inicio</title>
+    
+    <!-- Custom styles for this template -->
+    <link rel="STYLESHEET" type="text/css" href="{% static 'jumbotron.css' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section class="ppal">
+	    <div class="jumbotron">
+	      <div class="container">
+	        <h1>Bienvenido al creador de Dashboard</h1>
+	    </div>
+    </section>
+    <section class="about">
+      <div class="row">
+        <div id="about" class="col-md-6">
+          <h3>Sobre la app</h3>
+          <h4>Las tecnologías principales que componen la aplicación son las representadas con su logo justo abajo.</h4>
+	          <table class="techs" >
+					<thead>
+						<tr>
+							<th><h3>	GitHub			</h3></th>
+							<th><h3>	Elasticsearch	</h3></th>
+							<th><h3>	Kibana			</h3></th>
+							<th><h3>	Python			</h3></th>
+						</tr>
+					</thead>
+							<tr>
+								<th class="aboutappG"></th>
+								<th class="aboutappES"></th>
+								<th class="aboutappKI"></th>
+								<th class="aboutappPY"></th>
+							</tr>
+					</tbody>
+				</table>
+        </div>
+        <div id="aboutus" class="col-md-6">
+          <h3>Sobre el creador</h3>
+          <h4>Pablo Fernández Salguero</h4>
+          		<table class="techs" >
+					<thead>
+						<tr>
+							<th><h3>	GitHub			</h3></th>
+							<th><h3></h3></th>
+							<th><h3></h3></th>
+							<th><h3></h3></th>
+						</tr>
+					</thead>
+							<tr>
+								<th class="aboutappG"></th>
+								<th><h3><a href="https://github.com/pfsjob/">Homepage GitHub del creador</a></h3></th>
+							</tr>
+					</tbody>
+				</table>
+        </div>
+      </div>
+    </section>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
 </html>

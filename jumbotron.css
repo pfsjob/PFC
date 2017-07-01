@@ -1,0 +1,122 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+.body {
+  padding-top: 50px;
+  padding-bottom: 20px;  
+}
+
+.navbar-header {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-header > li {
+    float: none;
+    display: inline-block;
+}
+
+.ppal{
+	background-image: url(index3.jpg);
+	background-size: cover;
+	width: 100vw;
+    height: 100vh;
+}
+.jumbotron{
+	background-color:transparent !important;
+    position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.container{
+	position: relative;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.table{
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+  	border: 4px solid #dddddd;
+}
+
+.table th{
+   text-align: center;
+   border: 2px solid #dddddd;
+}
+
+.formulario{
+	width: 600px;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.row{
+	display: flex;
+	text-align: center;
+}
+
+.col-md-4{
+	border: 4px solid #dddddd;
+}
+.col-md-6{
+	border: 4px solid #dddddd;
+}
+
+.aboutappG{
+	background-image: url(../imagenes/logogithub.jpg);
+	background-size: cover;
+	width: 48px;
+    height: 55px;
+}
+
+.aboutappES{
+	background-image: url(../imagenes/logoES.jpg);
+	background-size: cover;
+	width: 110px;
+    height: 120px;
+}
+
+.aboutappKI{
+	background-image: url(../imagenes/logokibana.jpg);
+	background-size: cover;
+	width: 136px;
+    height: 120px;
+}
+.aboutappPY{
+	background-image: url(../imagenes/logopython.jpg);
+	background-size: cover;
+	width: 100px;
+    height: 110px;
+}
+
+.techs th{
+	width: 140px;
+  	overflow: auto;
+  	text-align: center;
+}
+.techs{
+  	overflow: auto;
+  	width: 50%;
+    margin: 0px auto;
+    float: none;
+}
+
+#columna1{
+	border: 0px;
+}
+
+#boton{
+	border-radius: 20px;
+    font-size: 40px;
+    line-height: 1.33333;
+    padding: 50px 60px;
+}
+
+
+
+
