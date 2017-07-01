@@ -68,27 +68,27 @@
 }
 
 .aboutappG{
-	background-image: url(../imagenes/logogithub.jpg);
+	background-image: url(logogithub.jpg);
 	background-size: cover;
 	width: 48px;
     height: 55px;
 }
 
 .aboutappES{
-	background-image: url(../imagenes/logoES.jpg);
+	background-image: url(logoES.jpg);
 	background-size: cover;
 	width: 110px;
     height: 120px;
 }
 
 .aboutappKI{
-	background-image: url(../imagenes/logokibana.jpg);
+	background-image: url(logokibana.jpg);
 	background-size: cover;
 	width: 136px;
     height: 120px;
 }
 .aboutappPY{
-	background-image: url(../imagenes/logopython.jpg);
+	background-image: url(logopython.jpg);
 	background-size: cover;
 	width: 100px;
     height: 110px;
