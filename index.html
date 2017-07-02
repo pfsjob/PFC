@@ -52,63 +52,99 @@
     </section>
     <section class="about">
     <div class="container">
-      <div class="row">
-        <div id="about" class="col-md-6">
-          <h3>Sobre la app</h3>
-          <h4>Las tecnologías principales que componen la aplicación son las representadas con su logo justo abajo.</h4>
-	          <table class="techs" >
-					<thead>
-						<tr>
-							<th><h3>	GitHub			</h3></th>
-							<th><h3>	Elasticsearch	</h3></th>
-							<th><h3>	Kibana			</h3></th>
-							<th><h3>	Python			</h3></th>
-						</tr>
-					</thead>
-							<tr>
-								<th class="aboutappG"></th>
-								<th class="aboutappES"></th>
-								<th class="aboutappKI"></th>
-								<th class="aboutappPY"></th>
-							</tr>
-					</tbody>
-				</table>
-        </div>
-        <div id="aboutus" class="col-md-6">
-          <h3>Sobre el creador</h3>
-          <h4>Pablo Fernández Salguero</h4>
-          		<table class="techs" >
-					<thead>
-						<tr>
-							<th><h3>	GitHub			</h3></th>
-							<th><h3></h3></th>
-						</tr>
-					</thead>
-							<tr>
-								<th class="aboutappG"></th>
-								<th><h3><a href="https://github.com/pfsjob/">Homepage GitHub del creador</a></h3></th>
-							</tr>
-					</tbody>
-				</table>
-        </div>
-      </div>
+    	<div id="info" class="row">
+    		<div id="about" class="col-md-6">
+    			<h3>Sobre la app</h3>
+				<h4>Las tecnologías principales que componen la aplicación son las representadas con su logo justo abajo.</h4>
+    			<div class="row">
+    				<div class="col-md-3">
+    					<p>GitHub</p>
+    					<img src=logogithub.jpg class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Elasticsearch</p>
+    					<img src=logoES.jpg class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Kibana</p>
+    					<img src=logokibana.jpg class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Python</p>
+    					<img src=logopython.jpg class="img-responsive">
+    				</div>
+    			</div>
+    		</div>
+    		<div id="aboutus" class="col-md-6">
+    			<h3>Sobre el creador</h3>
+				<h4>Pablo Fernández Salguero</h4>
+    			<div class="row">
+    				<div id="sinborde" class="col-md-6">
+    					<img src=logogithub.jpg class="img-responsive">
+    				</div>
+    				<div id="sinborde" class="col-md-6">
+    					<h3><a href="https://github.com/pfsjob/">Homepage GitHub del creador</a></h3>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+<!--       <div class="row"> -->
+<!--         <div id="about" class="col-md-6"> -->
+<!--           <h3>Sobre la app</h3> -->
+<!--           <h4>Las tecnologías principales que componen la aplicación son las representadas con su logo justo abajo.</h4> -->
+<!-- 	          <table class="techs" > -->
+<!-- 					<thead> -->
+<!-- 						<tr> -->
+<!-- 							<th><h3>	GitHub			</h3></th> -->
+<!-- 							<th><h3>	Elasticsearch	</h3></th> -->
+<!-- 							<th><h3>	Kibana			</h3></th> -->
+<!-- 							<th><h3>	Python			</h3></th> -->
+<!-- 						</tr> -->
+<!-- 					</thead> -->
+<!-- 							<tr> -->
+<!-- 								<th class="aboutappG"></th> -->
+<!-- 								<th class="aboutappES"></th> -->
+<!-- 								<th class="aboutappKI"></th> -->
+<!-- 								<th class="aboutappPY"></th> -->
+<!-- 							</tr> -->
+<!-- 					</tbody> -->
+<!-- 				</table> -->
+<!--         </div> -->
+<!--         <div id="aboutus" class="col-md-6"> -->
+<!--           <h3>Sobre el creador</h3> -->
+<!--           <h4>Pablo Fernández Salguero</h4> -->
+<!--           		<table class="techs" > -->
+<!-- 					<thead> -->
+<!-- 						<tr> -->
+<!-- 							<th><h3>	GitHub			</h3></th> -->
+<!-- 							<th><h3></h3></th> -->
+<!-- 						</tr> -->
+<!-- 					</thead> -->
+<!-- 							<tr> -->
+<!-- 								<th class="aboutappG"></th> -->
+<!-- 								<th><h3><a href="https://github.com/pfsjob/">Homepage GitHub del creador</a></h3></th> -->
+<!-- 							</tr> -->
+<!-- 					</tbody> -->
+<!-- 				</table> -->
+<!--         </div> -->
+<!--       </div> -->
       <div id="enlaces" class="row">
       		<div id="subenlaces" class="col-md-4">
-      			<a href="https://pfsjob.github.io/PFS-PFC.pdf" type="button" target="_blank" class="btn btn-primary btn-lg active">
+      			<a id="btnmemoria" href="https://pfsjob.github.io/PFS-PFC.pdf" type="button" target="_blank" class="btn btn-primary btn-lg active">
 			    	<span class="glyphicon glyphicon-pencil"></span> 
 			    		Memoria
 			  	</a>
 			  	<h4>Enlace a la memoria del proyecto.</h4>
       		</div>
       		<div id="subenlaces" class="col-md-4">
-      			<a href="https://github.com/pfsjob/pfsjob.github.io" type="button" target="_blank" class="btn btn-primary btn-lg active">
+      			<a id="btncodigo" href="https://github.com/pfsjob/pfsjob.github.io" type="button" target="_blank" class="btn btn-primary btn-lg active">
 			    	<span class="glyphicon glyphicon-wrench"></span> 
 			    		Código
 			  	</a>
 			  	<h4>Enlace al sitio GitHub con el código fuente del proyecto.</h4>
       		</div>
       		<div id="subenlaces" class="col-md-4">
-      			<a href="http://34.212.39.231/tareas/index/" type="button" target="_blank" class="btn btn-primary btn-lg active">
+      			<a id="btnapp" href="http://34.212.39.231/tareas/index/" type="button" target="_blank" class="btn btn-primary btn-lg active">
 			    	<span class="glyphicon glyphicon-globe"></span> 
 			    		Creador de dashboard
 			  	</a>
