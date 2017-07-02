@@ -30,25 +30,15 @@
 	background-color:transparent !important;
 	margin: 0 auto;
 	width: 90%;
-/*     position: relative; */
-/* 	top: 50%;  */
-/* 	left: 50%; */
-/* 	transform: translate(-50%, -50%); */
 }
 
 .container{
 	margin: 0 auto;
 	width: 90%;
-/* 	position: relative; */
-/* 	top: 50%;  */
-/* 	left: 50%; */
-/* 	transform: translate(-50%, -50%); */
 }
 
 #titulo{
 	margin: 0 auto;
-/* 	position: relative; */
-/* 	transform: translate(-50%, 0%); */
 	text-align: center;
 	font-weight: 1000;
 }
@@ -61,19 +51,6 @@
 
 #titulo h4{
 	font-size: 1vw;
-}
-.table{
-	position: absolute;
-	top: 50%; 
-	left: 50%;
-	transform: translate(-50%, -50%);
-  	border: 4px solid #dddddd;
-  	margin: 25px;
-}
-
-.table th{
-   text-align: center;
-   border: 2px solid #dddddd;
 }
 
 #btnmemoria, #btncodigo, #btnapp{
@@ -93,9 +70,6 @@
 	text-align: center;
 }
 
-/* .col-md-4{ */
-/* 	border: 4px solid #dddddd; */
-/* } */
 #sinborde{
 	border: 0px;
 }
@@ -104,55 +78,10 @@
 	border: 4px solid #dddddd;
 }
 
-#aboutappG{
-	background-image: url(logogithub.jpg);
-	background-size: cover;
-	width: 25vw;
-    height: 10vh;
-}
-
-#aboutappES{
-	background-image: url(logoES.jpg);
-	background-size: cover;
-	width: 25vw;
-    height: 10vh;
-}
-
-#aboutappKI{
-	background-image: url(logokibana.jpg);
-	background-size: cover;
-	width: 25vw;
-    height: 10vh;
-}
-#aboutappPY{
-	background-image: url(logopython.jpg);
-	background-size: cover;
-	width: 25vw;
-    height: 10vh;
-}
-
-.techs th{
-	width: 115px;
-  	overflow: auto;
-  	text-align: center;
-}
-.techs{
-  	overflow: auto;
-/*   	width: 50%; */
-    margin: 25px auto;
-    float: none;
-}
-
-#about{
-	margin: 25px;
-}
-#aboutus{
+#about, #aboutus{
 	margin: 25px;
 }
 
-/* #enlaces{ */
-/* 	margin: 25px auto; */
-/* } */
 #subenlaces{
 	margin: 25px auto;
 }
