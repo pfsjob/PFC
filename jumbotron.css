@@ -4,6 +4,14 @@
   padding-bottom: 20px;  
 }
 
+.about h3{
+	font-size: 2vw;
+}
+
+.about h4{  
+	font-size: 1vw;
+}
+
 .navbar-header {
     width: 100%;
     text-align: center;
@@ -86,16 +94,6 @@
 	margin: 25px auto;
 }
 
-#columna1{
-	border: 0px;
-}
-
-#boton{
-	border-radius: 20px;
-    font-size: 40px;
-    line-height: 1.33333;
-    padding: 50px 60px;
-}
 
 
 
