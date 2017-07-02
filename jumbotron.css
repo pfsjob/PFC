@@ -20,6 +20,11 @@
 	width: 100vw;
     height: 100vh;
 }
+
+.about{
+	width: 100vw;
+}
+
 .jumbotron{
 	background-color:transparent !important;
 	margin: 0 auto;
@@ -50,11 +55,11 @@
 #titulo h1{
 	letter-spacing: 5px;
     margin: 5px 0;
-    font-size: 3.5em;
+    font-size: 3.5vw;
 } 
 
 #titulo h4{
-	font-size: 1em;
+	font-size: 1vw;
 }
 .table{
 	position: absolute;
