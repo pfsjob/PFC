@@ -1,0 +1,100 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Página de inicio</title>
+    
+    <!-- Custom styles for this template -->
+    <link rel="STYLESHEET" type="text/css" href="{% static 'CSS/jumbotron.css' %}">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section class="ppal">
+	    <div class="jumbotron">
+	      <div class="container">
+	        <h1>Bienvenido al creador de Dashboard</h1>
+	        <p><h3>Para comenzar a usar la aplicación debe autenticarse a través de la plataforma GitHub.</h3></p>
+	        <p><a id="boton" class="btn btn-primary btn-lg active" href="{% url 'social:begin' 'github' %}" role="button">Login with GitHub &raquo;</a></p>
+	        <div class="container"><hr>
+	        </div>
+	        <div class="row">
+	        	<div id="columna1" class="col-md-6">
+	        		<p><a class="btn btn-primary btn-lg active" href="#about" role="button">Sobre la app &raquo;</a></p>
+	        	</div>
+	        	<div id="columna1" border="0px" class="col-md-6">
+	        		<p><a class="btn btn-primary btn-lg active" href="#aboutus" role="button">Sobre el creador &raquo;</a></p>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
+    <section class="about">
+    	<div class="container">
+    	<div id="info" class="row">
+    		<div id="about" class="col-md-6">
+    			<h3>Sobre la aplicación</h3>
+				<h4>Las tecnologías principales en las que se apoya la aplicación son las siguientes.</h4>
+    			<div class="row">
+    				<div class="col-md-3">
+    					<p>GitHub</p>
+    					<img src="{% static 'imagenes/logogithub.jpg' %}" class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Elasticsearch</p>
+    					<img src="{% static 'imagenes/logoES.jpg' %}" class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Kibana</p>
+    					<img src="{% static 'imagenes/logokibana.jpg' %}" class="img-responsive">
+    				</div>
+    				<div class="col-md-3">
+    					<p>Python</p>
+    					<img src="{% static 'imagenes/logopython.jpg' %}" class="img-responsive">
+    				</div>
+    			</div>
+    		</div>
+    		<div id="aboutus" class="col-md-6">
+    			<h3>Sobre el creador</h3>
+				<h4>Pablo Fernández Salguero</h4>
+    			<div class="row">
+    				<div id="sinborde" class="col-md-6">
+    					<img src="{% static 'imagenes/logogithub.jpg' %}" class="img-responsive">
+    				</div>
+    				<div id="sinborde" class="col-md-6">
+    					<h3><a href="https://github.com/pfsjob/">Homepage GitHub del creador</a></h3>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>

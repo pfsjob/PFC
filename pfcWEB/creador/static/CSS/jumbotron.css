@@ -1,0 +1,119 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+.body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.navbar-header {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-header  p{
+	font-size: 1vw;
+}
+
+.navbar-header > li {
+    float: none;
+    display: inline-block;
+}
+
+.navegacion{
+	height:6vh;
+}
+
+.ppal{
+	background-image: url(../imagenes/index3.jpg);
+	background-size: cover;
+	width: 100vw;
+    height: 100vh;
+background-color:transparent !important;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.jumbotron{
+	background-color:transparent !important;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.container{
+	margin: 0 auto;
+	width: 80%;
+}
+.table{
+	margin: 0 auto;
+  	border: 4px solid #dddddd;
+}
+
+.table th{
+   text-align: center;
+   border: 2px solid #dddddd;
+}
+
+.formulario{
+	width: 600px;
+	margin: 0 auto;
+}
+
+.row{
+	display: flex;
+	text-align: center;
+}
+
+.col-md-4{
+	border: 4px solid #dddddd;
+}
+.col-md-6{
+	border: 4px solid #dddddd;
+}
+
+#columna1{
+	border: 0px;
+}
+
+#boton{
+	border-radius: 20px;
+    font-size: 40px;
+    line-height: 1.33333;
+    padding: 50px 60px;
+}
+
+.ppal h2{
+	font-size: 1.25vw;
+}
+
+.ppal h3{
+	font-size: 1vw;
+}
+
+.ppal h4{
+	font-size: 0.75vw;
+}
+
+.ppal strong{
+	font-size: 1vw;
+}
+
+#botones{
+	white-space: normal;
+	margin: 2px;
+}
+
+#sinborde{
+	border: 0px;
+}
+
+.col-md-6{
+	border: 4px solid #dddddd;
+}
+
+#about, #aboutus{
+	margin: 25px;
+}
+
+
+
+

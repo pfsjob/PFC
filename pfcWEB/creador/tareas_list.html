@@ -1,0 +1,16 @@
+{% block content %}
+  <h2>Tareas</h2>
+<em>Usuario - Repositorio - Estado</em>
+<ul>
+<form action="{% url 'utareas:tdelete' %}" method="post">
+{% csrf_token %}
+    {% for tarea in object_list %}
+      <li>{{ tarea.usuario }} - {{ tarea.repositorio }} - {{ tarea.estado }}     BORRAR <input type="submit" name="delete" value="{{tarea.usuario}}-{{tarea.repositorio}}" value="BORRAR"/></li>
+    {% endfor %}
+</form>
+  </ul>
+<h2>Añadir tarea</h2>
+
+<h4>  Haga click <a href="{% url 'utareas:tadd'  %}">aquí</a> para añadir una tarea. </h4>
+<h4>  Haga click <a href="{% url 'utareas:tindex'  %}">aquí</a> para volver al inicio. </h4>
+{% endblock %}

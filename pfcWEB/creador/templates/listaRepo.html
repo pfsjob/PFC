@@ -1,0 +1,75 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Página de inicio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link rel="STYLESHEET" type="text/css" href="{% static 'CSS/jumbotron.css' %}">
+  </head>
+
+  <body>
+	<section class="navegacion">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <li class="pull-left">
+	          <a id="botones" href="{% url 'pantallainicio'  %}" class="btn btn-primary active" role="button"><p>Página principal</p></a>
+	          <a id="botones" href="{% url 'utareas:tadd'  %}" class="btn btn-primary active" role="button"><p>Añadir tarea</p></a>
+	          <a id="botones" href="{% url 'utareas:tlistpend'  %}" class="btn btn-primary active" role="button"><p>Tareas pendientes</p></a>
+	          <a id="botones" href="{% url 'utareas:tlistexec'  %}" class="btn btn-primary active" role="button"><p>Tareas ejecutadas</p></a>
+	          <a id="botones" href="{% url 'utareas:tlist'  %}" class="btn btn-primary active" role="button"><p>Listado general</p></a>
+	          <a id="botones" href="{% url 'utareas:tlistuser'  %}" class="btn btn-primary active" role="button"><p>Repositorios de un usuario</p></a>
+          </li>
+          <li class="pull-right">
+	          <a id="botones" href="http://34.212.39.231:8080/app/kibana#/dashboard/Git" target="_blank" class="btn btn-primary active" role="button"><p>Dashboard Kibana para Git</p></a>
+	          <a id="botones" href="http://34.212.39.231:8080/app/kibana#/dashboard/GitHub" target="_blank" class="btn btn-primary active" role="button"><p>Dashboard Kibana para GitHub</p></a>
+          </li>
+        </div>
+    </nav>
+    </section>
+	<section class="ppal">
+		<div class="jumbotron">
+		 <div class="container">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th><h2>PROPIETARIO</h2></th>
+						<th><h2>NOMBRE</h2></th>
+						<th><h2>NOMBRE COMPLETO</h2></th>
+						<th><h2>DIRECCIÓN HTML</h2></th>
+					</tr>
+				</thead>
+				<tbody>
+					{% csrf_token %}
+					{% for repo in object_list %}
+						<tr>
+							<th><h4>{{repo.propietario}}</h4></th>
+							<th><h4>{{repo.nombre}}</h4></th>
+							<th><h4>{{repo.nombre_completo}}</h4></th>
+							<th><h4><a href="{{repo.direccion_html}}" target="_blank">{{repo.direccion_html}}</a></h4></th>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		</div>
+	</section>
+ <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  </body>
+</html>
